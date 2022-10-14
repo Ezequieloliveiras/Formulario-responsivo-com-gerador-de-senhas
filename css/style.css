@@ -1,0 +1,239 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, #89bd23 0%, rgb(255, 255, 255) 100%);
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 900px ;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: rgba(66, 63, 80, 0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#register-form {
+    background-color: #FDFDFD;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #AAA;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom:  1px solid #AAA ;
+    padding: .6rem 0;
+}
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+#generate-password:hover {
+    color: #09f;
+}
+
+#register-form #generated-password {
+    border:  1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    color: #89bd23;
+    margin-bottom: 0.5rem;
+}
+
+#register-form button[type="submit"] {
+    background-color: #89bd23;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+#register-form button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.inputError {
+   border-bottom: 1px solid red;
+
+}
+.erro {
+    color: red;
+    font-size: 12px;
+}
+
+
+/* FORMULÁRIO GERAL */
+
+@media (min-width: 360px) and (max-width:510px) {
+    #register-form {
+    padding: 5px;
+    font-size: 13px;
+}}
+
+
+
+@media (max-width: 667px) {
+    #register-form h2 {
+        font-size: 1.0rem;
+    }
+}
+
+/* FORMULÁRIO GERAL */
+
+
+
+
+@media (min-width:0px) and (max-width:374px) {
+    #register-banner h1 {
+        font-size: 15px;
+    }
+}
+
+
+/* REGISTER BANNER H1 */
+
+@media (min-width:375px) and (max-width:502px) {
+    #register-banner h1 {
+        font-size: 29px;
+    }
+}
+
+@media (min-width:431px) and (max-width:481px) {
+    #register-banner h1 {
+        padding-left: 15px;
+        padding-right: 10px;
+       
+    }
+}
+
+@media (min-width:482px) and (max-width:553px) {
+    #register-banner h1 {
+        font-size: 30px;
+        padding-left: 8px;
+    }
+}
+
+@media (min-width:554px) and (max-width:670px) {
+    #register-banner h1 {
+        font-size: 30px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width:580px) and (max-width:706px) {
+    #register-banner h1 {
+        font-size: 30px;
+        padding-left: 35px;
+    }
+}
+
+@media (min-width:706px) and (max-width:888px) {
+    #register-banner h1 {
+        font-size: 35px;
+        padding-left: 50px;
+    }
+}
+
+
+/* REGISTER BANNER H1 */
+
+
+
+/* BANNER-LAYER */
+
+@media (min-width:375px) and (max-width:502px){
+    #banner-layer {
+        padding: 5px;
+    }
+}
+
+
+@media (min-width:501px) and (max-width:542px){
+    #banner-layer {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+/* BANNER-LAYER */
+
